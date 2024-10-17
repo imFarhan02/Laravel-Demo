@@ -20,6 +20,7 @@ class HolidayResource extends JsonResource
             'title' => $this->title,
             'date' => $this->date,
             'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     
     }

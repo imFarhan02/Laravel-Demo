@@ -42,7 +42,7 @@ class HolidayController extends Controller
         return response()->json([
             'message' => 'Holiday Created Succesfully!!',
             'data' => new HolidayResource($holiday)
-        ], 200);
+        ], 201);
     }
 
     public function show(Holiday $holiday)
@@ -93,6 +93,6 @@ class HolidayController extends Controller
         // Return success message
         return response()->json([
             'message' => 'Holiday Deleted Successfully!!'
-        ], 200);
+        ], 204);
     }
 }
